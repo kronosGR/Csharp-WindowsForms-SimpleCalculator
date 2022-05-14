@@ -16,5 +16,12 @@ namespace SimpleCalculator
         {
             InitializeComponent();
         }
+
+        private void click_button(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            resultBox.Text = resultBox.Text + button.Text;
+        }
+
     }
 }
